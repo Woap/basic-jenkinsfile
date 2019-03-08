@@ -1,4 +1,4 @@
-  node('maître'){
+  node('master'){
   stage 'first'
   echo 'worked'
 
