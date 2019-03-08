@@ -1,4 +1,4 @@
-node('agent'){
+  node('maître'){
   stage 'first'
   echo 'worked'
 
