@@ -3,7 +3,7 @@ def label = "mypod-${UUID.randomUUID().toString()}"
 podTemplate(label: label, containers: [
     containerTemplate(name: 'temp', image: 'woapy/jenkins-slave:latest', ttyEnabled: true, command: 'cat')
   ]) {
-    node(label) {
+    node('master') {
         stage 'first'
         echo 'worked'
 
